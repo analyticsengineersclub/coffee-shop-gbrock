@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 with
  first_order as (
      select
