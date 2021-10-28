@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: coffee_shop
+    description: aec's coffee shop db
+    project: aec-2021-10-thursdays
+    tables:
+      - name: customers
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+
+      - name: orders
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
