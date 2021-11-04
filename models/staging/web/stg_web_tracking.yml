@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: pageviews
+    description: web page view tracking
+    columns: 
+      - name: pageview_id
+        description: primary key
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: id of customer after they sign in
+        tests:
+          - not_null
